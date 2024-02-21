@@ -2,14 +2,14 @@ import React from "react";
 
 const Navbar = ({ handleThemeSwitch, theme }) => {
   return (
-    <div className=" flex justify-between p-10">
-      <h1 className="text-indigo-500 font-bold text-4xl cursor-pointer">
+    <div className=" flex items-center justify-between p-4 z-[100] w-full  ">
+      <h1 className=" text-indigo-500 font-bold text-2xl cursor-pointer lg:text-4xl px-4 py-3 rounded-md">
         MovieApp
       </h1>
       <div className="flex gap-x-4">
         <button
           type="button"
-          className=" z-10 right-2 top-2 bg-indigo-500 text-lg p-5 rounded-md"
+          className=" z-10 right-2 top-2 bg-indigo-500 hover:bg-indigo-700 transition-colors text-lg px-4 py-3 rounded-md"
           onClick={handleThemeSwitch}
         >
           {theme === "dark" ? (
@@ -18,7 +18,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
               width="16"
               height="16"
               fill="currentColor"
-              class="bi bi-moon-fill"
+              className="bi bi-moon-fill"
               viewBox="0 0 16 16"
             >
               <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
@@ -36,8 +36,10 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
             </svg>
           )}
         </button>
-        <button className="dark:text-slate-600">Sign In</button>
-        <button className="dark:text-slate-600">Log In</button>
+        <button className="bg-indigo-500 hover:bg-indigo-700 transition-colors px-4 py-3 rounded-md text-white">
+          Sign In
+        </button>
+        <button className="dark:text-slate-200">Log In</button>
       </div>
     </div>
   );
