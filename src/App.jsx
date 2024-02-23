@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
+import AuthContextProvider from "./context/AuthContext";
+
 
 const App = () => {
   const [theme, setTheme] = useState(null);
@@ -15,26 +17,26 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    if(theme === 'dark'){
-      document.documentElement.classList.add('dark')
-    }else{
-      document.documentElement.classList.remove('dark')
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
     }
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    
-    setTheme(theme == 'dark' ? 'light' : 'dark')
-  }
-  
+    setTheme(theme == "dark" ? "light" : "dark");
+  };
 
   return (
-    <div className="bg:white dark:bg-slate-900">
-      <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme}/>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-      </Routes>
-    </div>
+    <AuthContextProvider>
+      <div className="bg:white dark:bg-slate-900">
+        <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </div>
+    </AuthContextProvider>
   );
 };
-export default App; 
+export default App;

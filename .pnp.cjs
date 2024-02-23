@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:4.2.1"],\
             ["autoprefixer", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:10.4.17"],\
             ["axios", "npm:1.6.7"],\
+            ["dotenv", "npm:16.4.5"],\
             ["eslint", "npm:8.56.0"],\
             ["eslint-plugin-react", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:7.33.2"],\
             ["eslint-plugin-react-hooks", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:4.6.0"],\
@@ -2945,6 +2946,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["dotenv", [\
+        ["npm:16.4.5", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.4.5-bcb20eb95d-301a12c3d4.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.4.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["eastasianwidth", [\
         ["npm:0.2.0", {\
           "packageLocation": "./.yarn/cache/eastasianwidth-npm-0.2.0-c37eb16bd1-7d00d7cd8e.zip/node_modules/eastasianwidth/",\
@@ -4757,6 +4767,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:4.2.1"],\
             ["autoprefixer", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:10.4.17"],\
             ["axios", "npm:1.6.7"],\
+            ["dotenv", "npm:16.4.5"],\
             ["eslint", "npm:8.56.0"],\
             ["eslint-plugin-react", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:7.33.2"],\
             ["eslint-plugin-react-hooks", "virtual:4b3abe23d7ad665664d71de7b6c0d1f51e232ca5036ce18c96b869645d3b6b0496264162b0bf095b4dc94fe0246d56f9f6838a5758003b5092a98459fa7615f7#npm:4.6.0"],\
